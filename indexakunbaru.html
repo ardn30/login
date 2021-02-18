@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creat New Account</title>
+	<link rel="stylesheet" type="text/css" href="halamanakun.css">
+</head>
+<body>
+	<div class="card">
+		<div class="card-content">
+			<div class="title">
+				<h2>CREATE ACCOUNT</h2>
+			</div>
+			<div class="underline"></div>
+		</div>
+
+				<!-- isi di card -->
+
+				<!-- untuk email -->	
+		<label id="email" for="user-email" style="padding-top: 13px"> &nbsp; <!-- Email --></label>	
+			<form method="post" class="form">
+				<input id="user-email" class="form-content" type="email" name="email" autocomplete="on" placeholder="Email"  required/>
+					<div class="formborder"></div>
+			</form>
+
+				<!-- untuk nama -->
+		<label id="name" for="user-name" style="padding-top: 13px"> &nbsp;<!-- Nama --></label>	
+			<form method="post" class="form">
+				<input id="user-name" class="form-content" type="nama" name="nama" autocomplete="on" placeholder="Nama" required/>
+					<div class="formborder"></div>
+			</form>
+
+				<!-- untuk password -->
+		<label id="pass" for="user-password" style="padding-top: 13px"> &nbsp; <!-- Password --></label>		
+			<form method="post" class="form">
+				<input id="user-password" class="form-content" type="password" name="password" placeholder="Password">
+					<div class="formborder"></div>
+			</form>
+
+				<!-- untuk konfirmasi password -->
+				<label id="pass" for="user-password2" style="padding-top: 13px"> &nbsp; <!-- Password --></label>		
+			<form method="post" class="form">
+				<input id="user-password2" class="form-content" type="password" name="password2" placeholder="Konfirmasi Password">
+					<div class="formborder"></div>
+			</form>
+
+				 <form action="" method="post" id="form">
+     			   <div class="show">
+        	 			   <input type="checkbox" id="show-hide" name="show-hide"><label for="show-hide" id="show-hide-label">Show Password </label>
+        			</div>
+    			 </form>    
+			
+						<div class="tombol">
+							<a href="index.html">
+								<input id="submit-btn" type="submit" name="submit" value="Sign Up">
+							</a>
+							<br>
+							Have an account?<a href="index.html" id="login">Log In</a>
+						</div>
+	</div>
+
+
+	 <script>
+    (function() {
+    
+        var showHide = function( element, field ) {
+            this.element = element;
+            this.field = field;
+            
+            this.toggle();    
+        };
+        
+        showHide.prototype = {
+            toggle: function() {
+                var self = this;
+                self.element.addEventListener( "change", function() {
+                    if(self.element.checked) {self.field.setAttribute( "type", "text" );}
+                    else {self.field.setAttribute( "type", "password","password2" );}
+                }, false);
+            }
+        };
+        
+        document.addEventListener( "DOMContentLoaded", function() {
+            var checkbox = document.querySelector( "#show-hide" ),
+                password = document.querySelector( "#user-password","#user-password2" ),
+                form = document.querySelector( "#form" );
+                
+                form.addEventListener( "submit", function( e ) {
+                    e.preventDefault();
+                }, false);
+                
+                var toggler = new showHide( checkbox, password );
+        });
+        
+    })();
+</script>
+</body>
+</html>

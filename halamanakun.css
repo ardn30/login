@@ -1,0 +1,128 @@
+body{
+	background: -webkit-linear-gradient(right, lightslategray, mintcream, grey);
+	border: 100%;
+}
+
+.card{
+	background: white;
+	border-radius: 10px;
+	box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+	height: 550px;
+	margin: 1rem auto 5rem auto;
+	width: 829px;
+}
+
+.card-content{
+	padding: 12px 30px;
+}
+
+.title{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding-top: 1px;
+	text-align: center;
+	color: sienna;
+	font-size: 25px;
+}
+
+.underline {
+      background: -webkit-linear-gradient(right, darkslategrey, dimgrey);
+      height: 2px;
+      margin: -1.1rem auto 0 auto;
+      width: 300px;
+}
+
+a{
+	text-decoration: none;
+}
+
+label{
+	font-family: Bookman Old Style;
+	font-size: 19pt;
+	margin-left: 200px;
+}
+
+.form {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+}
+
+
+#user-email, #user-name{
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Times New Roman";
+	font-size: 15pt;
+	padding: 10px;
+}
+
+#user-password, #user-password2{
+	font-family: Times New Roman;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 15pt;
+	padding : 10px;
+}
+
+.form-border {
+    height: 10px;
+    width: 10px;
+}
+
+.form-content {
+  	background: white;
+    border: none;
+    outline: none;
+    width: 50%;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.65);
+    border-radius: 50px;
+}
+
+#show-hide{
+  font-size: 10pt;
+  text-align : left;
+  margin-left: 1px;
+  width: 0px;
+  padding-left: : 0px;
+  padding: -12px;
+}
+
+#show-hide-label{
+margin-left: 1px;
+text-align: left;
+font-size: 15px;
+}
+
+.show{
+  margin-left: 205px;
+}
+
+#login {
+    color: brown;
+    font-family: "Raleway";
+    font-size: 10pt;
+    text-align: right;
+    margin-left: 1px;
+}
+
+#submit-btn {
+    background: -webkit-linear-gradient(right, whitesmoke, thistle, whitesmoke);
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 1px 8px gray;
+    cursor: pointer;
+    color: brown;
+    font-family: "Raleway SemiBold";
+    height: 42.3px;
+    margin: 4 auto;
+    margin-top: 50px;
+    transition: 0.25s;
+    width: 153px;
+    font-size: 15pt;
+}
+
+.tombol{
+	margin-left: 350px;
+}
